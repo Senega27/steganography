@@ -1,0 +1,16 @@
+Rubiks Encryption
+
+--type encrypt --image example/Flower.png --alpha 8 --iter_max 10 --output_image example/Renc.jpg --key example/Renc.txt
+
+Rubiks Decryption
+
+--type decrypt --image examples/res.png --output_image example/Rdyc.jpg --key examples/Renc.txt
+
+Steganography Encryption
+
+merge --image1=example/Road.jpg --image2=example/Renc.jpg --output=example/Soutput.jpg
+
+Steganography Decryption
+
+unmerge --image=example/Soutput.jpg --output=example/ras.png
+
